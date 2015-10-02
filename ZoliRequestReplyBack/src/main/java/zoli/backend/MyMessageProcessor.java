@@ -11,7 +11,9 @@ public class MyMessageProcessor implements Processor {
 	public void process(Exchange exchange) throws Exception {
 		Shiporder payload = exchange.getIn().getBody(myorder.Shiporder.class);
 		// do something with the payload and/or exchange here
-		exchange.getIn().setBody("Changed body " + payload.getOrderperson());
+		String orderPerson ="Changed body " + payload.getOrderperson();
+		
+		payload.setOrderperson(orderPerson);
 	}
 
 }

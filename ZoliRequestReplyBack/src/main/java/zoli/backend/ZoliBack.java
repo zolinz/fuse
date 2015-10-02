@@ -18,10 +18,12 @@ public class ZoliBack extends RouteBuilder {
 	public void configure() throws Exception {
 		Logger myLog = LoggerFactory.getLogger(ZoliBack.class);
 		from("activemq:queue:hfc.in")
+		.log(LoggingLevel.INFO,  myLog, "Before marshalling ${headers} and body : ${body}")
 		.unmarshal(jaxb)
 		.to("myMsgProcessor")
-		//.log(LoggingLevel.INFO,  myLog, "EXCHNAGEPATTERN  BackendRoute ${exchangePattern}")
-		.log(LoggingLevel.INFO,  myLog, "BackendRoute ${in.headers}");
+		.marshal(jaxb)
+		
+		.log(LoggingLevel.INFO,  myLog, "After marshalling ${headers}  and body : ${body}");
 	
 	}
 
