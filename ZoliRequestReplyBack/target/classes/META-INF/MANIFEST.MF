@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1443472396273
+Bnd-LastModified: 1443782208466
 Build-Jdk: 1.8.0_45
 Built-By: zolta_000
 Bundle-ManifestVersion: 2
@@ -7,8 +7,8 @@ Bundle-Name: Zoli Backend
 Bundle-SymbolicName: backend
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: zoli.backend;uses:="org.apache.camel.builder,org.slf4j,o
- rg.apache.camel,org.apache.camel.model";version="1.0.0.SNAPSHOT"
+Export-Package: zoli.backend;uses:="org.apache.camel,org.apache.camel.bu
+ ilder,org.slf4j,org.apache.camel.model";version="1.0.0.SNAPSHOT"
 Import-Package: org.apache.activemq,org.apache.activemq.camel.component,
  org.apache.camel;version="[2.15,3)",org.apache.camel.builder;version="[
  2.15,3)",org.apache.camel.model;version="[2.15,3)",org.osgi.service.blu
