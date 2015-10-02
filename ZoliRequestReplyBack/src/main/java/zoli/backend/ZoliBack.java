@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class ZoliBack extends RouteBuilder {
 
 	
-	//testing github with more comments
+	// this is a new comment from branch 2
 	@Override
 	public void configure() throws Exception {
 		Logger myLog = LoggerFactory.getLogger(ZoliBack.class);
