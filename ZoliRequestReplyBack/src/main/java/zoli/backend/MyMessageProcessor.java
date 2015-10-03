@@ -7,6 +7,7 @@ import myorder.Shiporder;
 
 public class MyMessageProcessor implements Processor {
 
+	//this is my body processor
 	@Override
 	public void process(Exchange exchange) throws Exception {
 		Shiporder payload = exchange.getIn().getBody(myorder.Shiporder.class);
