@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1443472396273
+Bnd-LastModified: 1443817471572
 Build-Jdk: 1.8.0_45
 Built-By: zolta_000
 Bundle-ManifestVersion: 2
@@ -7,10 +7,14 @@ Bundle-Name: Zoli Backend
 Bundle-SymbolicName: backend
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: zoli.backend;uses:="org.apache.camel.builder,org.slf4j,o
- rg.apache.camel,org.apache.camel.model";version="1.0.0.SNAPSHOT"
-Import-Package: org.apache.activemq,org.apache.activemq.camel.component,
- org.apache.camel;version="[2.15,3)",org.apache.camel.builder;version="[
- 2.15,3)",org.apache.camel.model;version="[2.15,3)",org.osgi.service.blu
- eprint;version="[1.0.0,2.0.0)",org.slf4j;version="[1.7,2)"
+Export-Package: myorder;uses:="javax.xml.bind.annotation";version="1.0.0
+ .SNAPSHOT",zoli.backend;uses:="myorder,org.apache.camel,org.apache.came
+ l.builder,org.slf4j,org.apache.camel.spi,org.apache.camel.converter.jax
+ b,org.apache.camel.model";version="1.0.0.SNAPSHOT"
+Import-Package: javax.xml.bind.annotation,org.apache.activemq,org.apache
+ .activemq.camel.component,org.apache.camel;version="[2.15,3)",org.apach
+ e.camel.builder;version="[2.15,3)",org.apache.camel.converter.jaxb;vers
+ ion="[2.15,3)",org.apache.camel.model;version="[2.15,3)",org.apache.cam
+ el.spi;version="[2.15,3)",org.osgi.service.blueprint;version="[1.0.0,2.
+ 0.0)",org.slf4j;version="[1.7,2)"
 Tool: Bnd-1.50.0
