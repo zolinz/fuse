@@ -11,12 +11,9 @@ public class ZoliBack extends RouteBuilder {
 	
 	DataFormat jaxb = new JaxbDataFormat("myorder");
 
-	//another commit from04
-	// new comment from 04
-	// comment from branch 2
-	//latest comment from branch4 to merge remotely
-	// this is a new comment from branch 2
-	// testing github with more comments
+
+	// too many comments not clean from 02 
+	
 	@Override
 	public void configure() throws Exception {
 		Logger myLog = LoggerFactory.getLogger(ZoliBack.class);
