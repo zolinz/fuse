@@ -19,7 +19,7 @@
 	<bean id="zoliBack" class="zoli.backend.ZoliBack">
 	</bean>
 	
-	<bean id="myMsgProcessor" class="zoli.backend.MyMessageProcessor" />
+	<!-- <bean id="myMsgProcessor" class="zoli.backend.MyMessageProcessor" /> -->
 
 	<camelContext xmlns="http://camel.apache.org/schema/blueprint" id="zoli-back-context">
 		<routeBuilder ref="zoliBack" id="zoliBackRoute" />

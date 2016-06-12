@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <do:createDesignResponse xmlns:nbn="http://www.nbnco.com.au/fttn" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:cs="http://www.nbnco.com.au/pni/storm/Common/v1" xmlns:do="http://www.nbnco.com.au/pni/storm/createDesignMNR/v1">
+            <cs:transactionId>XXXXXXXXXXXXXXX</cs:transactionId>
+            <nbnLocationId>LOC000012345678</nbnLocationId>
+            <technologyType>Copper</technologyType>
+            <copperClass>Fibre To The Node</copperClass>
+            <ListOfShortfalls>
+                <cs:shortfall>
+                    <cs:type>Node Patch</cs:type>
+                    <cs:category>Automatically Fulfillable</cs:category>
+                </cs:shortfall>
+                <cs:shortfall>
+                    <cs:type>Node Splitter</cs:type>
+                    <cs:category>Automatically Fulfillable</cs:category>
+                </cs:shortfall>
+            </ListOfShortfalls>
+            <designId>LOC000012345678-CPI000012345678-20141123</designId>
+            <copperPath>
+                <cs:id>CPI000012345678</cs:id>
+                <cs:serviceClass>12</cs:serviceClass>
+                <cs:minDownstreamRate>26.734</cs:minDownstreamRate>
+                <cs:maxDownstreamRate>43.561</cs:maxDownstreamRate>
+                <cs:minDownstreamRateWithDPBO>13.452</cs:minDownstreamRateWithDPBO>
+                <cs:maxDownstreamRateWithDPBO>25.125</cs:maxDownstreamRateWithDPBO>
+                <cs:minUpstreamRate>2.423</cs:minUpstreamRate>
+                <cs:maxUpstreamRate>6.896</cs:maxUpstreamRate>
+            </copperPath>
+            <twistedPairTrail gml:id="trail_001" aggregationType="sequence">
+                <nbn:id>D0001</nbn:id>
+                <nbn:layer>Twisted Pairs</nbn:layer>
+                <nbn:premises> 
+                    <nbn:NBNLocationId>LOC00000012</nbn:NBNLocationId>
+                </nbn:premises>
+                <nbn:trailTerminationPoint  status="installed" 
+                                    serviceType="VDSL|POTS"><!--(A) Trail Termination Point-->
+                    <nbn:systemId>893746589</nbn:systemId>
+                    <nbn:status>installed</nbn:status>
+                    <nbn:containedBy>
+                        <nbn:equipment>
+                            <nbn:systemId>781274058</nbn:systemId>
+                            <nbn:id>E0001</nbn:id>
+                            <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                            <nbn:type>Premise Equipment</nbn:type>
+                            <nbn:subtype>TCO</nbn:subtype>
+                        </nbn:equipment>
+                    </nbn:containedBy>
+                </nbn:trailTerminationPoint>
+                <nbn:linkConnection lifecycleStatus="constructed" 
+                            serviceType="VDSL|POTS"><!--(MLC1) Lead-in pair-->
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>893746589</nbn:systemId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>781274058</nbn:systemId>
+                                <nbn:id>E0001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Premise Equipment</nbn:type>
+                                <nbn:subtype>TCO</nbn:subtype>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionTerminationPoint>
+                    <nbn:route>
+                        <nbn:systemId>451274058</nbn:systemId>
+                        <nbn:pairId>157</nbn:pairId>
+                        <nbn:containedBy>
+                            <nbn:cable>
+                                <nbn:systemId>451276298</nbn:systemId>
+                                <nbn:id>C0001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Cable</nbn:type>
+                                <nbn:subtype>CLS</nbn:subtype>
+                            </nbn:cable>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>2674890873</nbn:systemId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>712874238</nbn:systemId>
+                                <nbn:id>J001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Joint</nbn:type>
+                                <nbn:subtype>CJL</nbn:subtype>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection lifecycleStatus="constructed" 
+                            serviceType="VDSL|POTS"> <!--(MLC2) Distribution pair-->
+                    <nbn:connectionPoint>
+                        <nbn:systemId>2674890873</nbn:systemId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>712874238</nbn:systemId>
+                                <nbn:id>J001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Joint</nbn:type>
+                                <nbn:subtype>CJL</nbn:subtype>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>451604058</nbn:systemId>
+                        <nbn:pairId>157</nbn:pairId>
+                        <nbn:containedBy>
+                            <nbn:cable>
+                                <nbn:systemId>713844058</nbn:systemId>
+                                <nbn:id>C0002</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Cable</nbn:type>
+                                <nbn:subtype>CDS</nbn:subtype>
+                            </nbn:cable>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>713844058</nbn:systemId>
+                        <nbn:sequenceId>157</nbn:sequenceId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>429844058</nbn:systemId>
+                                <nbn:id>TM001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>O Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection     lifecycleStatus="constructed" 
+                                serviceType="VDSL|POTS"> <!--(MLC3) Pillar Patch-->
+                    <nbn:connectionPoint>
+                        <nbn:systemId>713844058</nbn:systemId>
+                        <nbn:sequenceId>157</nbn:sequenceId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>429844058</nbn:systemId>
+                                <nbn:id>TM001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>O Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route dataStatus="anonymous"/>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>713844678</nbn:systemId>
+                        <nbn:sequenceId>365</nbn:sequenceId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>926744058</nbn:systemId>
+                                <nbn:id>TM002</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>C Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>  
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection     lifecycleStatus="constructed" 
+                                serviceType="VDSL|POTS"> <!--(MLC4) CCU Interconnect Pair-->
+                    <nbn:connectionPoint>
+                        <nbn:systemId>713844678</nbn:systemId>
+                        <nbn:sequenceId>365</nbn:sequenceId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>926744058</nbn:systemId>
+                                <nbn:id>TM002</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>C Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>  
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>445604058</nbn:systemId>
+                        <nbn:pairId>275</nbn:pairId>
+                        <nbn:containedBy>
+                            <nbn:cable>
+                                <nbn:systemId>713844034</nbn:systemId>
+                                <nbn:id>C0003</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Cable</nbn:type>
+                                <nbn:subtype>CTS</nbn:subtype>
+                            </nbn:cable>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>713843278</nbn:systemId>
+                        <nbn:sequenceId>275</nbn:sequenceId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>926736858</nbn:systemId>
+                                <nbn:id>TM003</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>C Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>  
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection     lifecycleStatus="designed" 
+                                serviceType="VDSL|POTS">  <!--(MLC5) Interconnect Pair in FTTN Node-->
+                    <nbn:connectionPoint>
+                        <nbn:systemId>713843278</nbn:systemId>
+                        <nbn:sequenceId>275</nbn:sequenceId>
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>926736858</nbn:systemId>
+                                <nbn:id>TM003</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>C Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>  
+                    </nbn:connectionPoint>
+                    <nbn:route dataStatus="anonymous" shortfall="Node Patch"/>
+                    <nbn:connectionPoint shortfall="Node Splitter">
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>221133445</nbn:systemId>
+                                <nbn:id>SPL-0001</nbn:id>
+                                <nbn:lifecycleStatus>designed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>SPB</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>926736859</nbn:systemId>
+                                        <nbn:id>TM004</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>CCF</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:crossConnectionPoint   status="not installed" 
+                                    serviceType="VDSL"><!--(DCCP6A) cross connection for data within a splitter-->
+                    <nbn:connectionPoint shortfall="Node Splitter">
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>221133445</nbn:systemId>
+                                <nbn:id>SPL-0001</nbn:id>
+                                <nbn:lifecycleStatus>designed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>SPB</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>926736859</nbn:systemId>
+                                        <nbn:id>TM004</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>CCF</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:connectionPoint shortfall="Node Splitter">
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>221133445</nbn:systemId>
+                                <nbn:id>SPL-0001</nbn:id>
+                                <nbn:lifecycleStatus>designed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>SPB</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>926736859</nbn:systemId>
+                                        <nbn:id>TM004</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>CCF</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:crossConnectionPoint>
+                <nbn:linkConnection     lifecycleStatus="designed" 
+                                serviceType="VDSL"><!--(DLC7) interconnection for data from the splitter to DSLAM Termination Module-->
+                    <nbn:connectionPoint shortfall="Node Splitter">
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>221133445</nbn:systemId>
+                                <nbn:id>SPL-0001</nbn:id>
+                                <nbn:lifecycleStatus>designed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>SPB</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>926736859</nbn:systemId>
+                                        <nbn:id>TM004</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>CCF</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route dataStatus="anonymous" shortfall="Node Splitter"/>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>9890348982</nbn:systemId>
+                        <nbn:sequenceId>934</nbn:sequenceId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>926736859</nbn:systemId>
+                                <nbn:id>TM004</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Chassis</nbn:type>
+                                <nbn:subtype>CCF</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>765367485</nbn:systemId>
+                                        <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>FTTN Node</nbn:type>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection     lifecycleStatus="constructed" 
+                                serviceType="VDSL"> <!--(DLC8) Interconnect Pair from DSLAM Termination Module to LT Card-->
+                    <nbn:connectionPoint>
+                        <nbn:systemId>9890348982</nbn:systemId>
+                        <nbn:sequenceId>934</nbn:sequenceId>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>926736859</nbn:systemId>
+                                <nbn:id>TM004</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Chassis</nbn:type>
+                                <nbn:subtype>CCF</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>765367485</nbn:systemId>
+                                        <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>FTTN Node</nbn:type>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route dataStatus="anonymous"/>
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>790274058</nbn:systemId>
+                        <nbn:sequenceId>1</nbn:sequenceId>
+                        <nbn:name>SWDSL0001/LT01/01</nbn:name>
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>543274058</nbn:systemId>
+                                <nbn:id>2XXX-01-01-VLC-0029</nbn:id>
+                                <nbn:name>SWDSL0001/LT01</nbn:name>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>LTM</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>4323467485</nbn:systemId>
+                                        <nbn:id>2XXX-01-01-DSL-2003</nbn:id>
+                                        <nbn:name>SWDSL0001</nbn:name>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>DSL</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionTerminationPoint>
+                </nbn:linkConnection>
+                <nbn:trailTerminationPoint  status="installed"
+                                    serviceType="VDSL"> <!-- Trail Termination Point for data End-->
+                    <nbn:systemId>790274058</nbn:systemId>
+                    <nbn:sequenceId>1</nbn:sequenceId>
+                    <nbn:name>SWDSL0001/LT01/01</nbn:name>
+                    <nbn:status>installed</nbn:status>
+                    <nbn:containedBy>
+                        <nbn:equipment>
+                            <nbn:systemId>543274058</nbn:systemId>
+                            <nbn:id>2XXX-01-01-VLC-0029</nbn:id>
+                            <nbn:name>SWDSL0001/LT01</nbn:name>
+                            <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                            <nbn:type>Card</nbn:type>
+                            <nbn:subtype>LTM</nbn:subtype>
+                            <nbn:containedBy>
+                                <nbn:equipment>
+                                    <nbn:systemId>4323467485</nbn:systemId>
+                                    <nbn:id>2XXX-01-01-DSL-2003</nbn:id>
+                                    <nbn:name>SWDSL0001</nbn:name>
+                                    <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                    <nbn:type>Chassis</nbn:type>
+                                    <nbn:subtype>DSL</nbn:subtype>
+                                    <nbn:containedBy>
+                                        <nbn:equipment>
+                                            <nbn:systemId>765367485</nbn:systemId>
+                                            <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                            <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                            <nbn:type>FTTN Node</nbn:type>
+                                        </nbn:equipment>
+                                    </nbn:containedBy>
+                                </nbn:equipment>
+                            </nbn:containedBy>
+                        </nbn:equipment>
+                    </nbn:containedBy>
+                </nbn:trailTerminationPoint>
+                <nbn:crossConnectionPoint   status="not installed" 
+                                    serviceType="POTS"> <!--(VCCP6B) cross connection for voice within a splitter-->
+                    <nbn:connectionPoint shortfall="Node Splitter">
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>221133445</nbn:systemId>
+                                <nbn:id>SPL-0001</nbn:id>
+                                <nbn:lifecycleStatus>designed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>SPB</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>926736859</nbn:systemId>
+                                        <nbn:id>TM004</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>CCF</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:connectionPoint shortfall="Node Splitter">
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>221133445</nbn:systemId>
+                                <nbn:id>SPL-0001</nbn:id>
+                                <nbn:lifecycleStatus>designed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>SPB</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>926736859</nbn:systemId>
+                                        <nbn:id>TM004</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>CCF</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:crossConnectionPoint>
+                <nbn:linkConnection     lifecycleStatus="designed"
+                                serviceType="POTS"> <!--(VLC9) interconnection from splitter to CCF Termination Module-->
+                    <nbn:connectionPoint shortfall="Node Splitter">
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>221133445</nbn:systemId>
+                                <nbn:id>SPL-0001</nbn:id>
+                                <nbn:lifecycleStatus>designed</nbn:lifecycleStatus>
+                                <nbn:type>Card</nbn:type>
+                                <nbn:subtype>SPB</nbn:subtype>
+                                <nbn:containedBy>
+                                    <nbn:equipment>
+                                        <nbn:systemId>926736859</nbn:systemId>
+                                        <nbn:id>TM004</nbn:id>
+                                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                        <nbn:type>Chassis</nbn:type>
+                                        <nbn:subtype>CCF</nbn:subtype>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:equipment>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route dataStatus="anonymous" shortfall="Node Patch"/>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>5236993688</nbn:systemId>
+                        <nbn:sequenceId>123</nbn:sequenceId> 
+                        <nbn:status>not installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>532566858</nbn:systemId>
+                                <nbn:id>TM005</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>X Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection     lifecycleStatus="constructed"
+                                serviceType="POTS"> <!--(VLC10) CCU interconnection from CCF and the Piller Module-->
+                    <nbn:connectionPoint>
+                        <nbn:systemId>5236993688</nbn:systemId>
+                        <nbn:sequenceId>123</nbn:sequenceId> 
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>532566858</nbn:systemId>
+                                <nbn:id>TM005</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>X Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>765367485</nbn:systemId>
+                                                <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>FTTN Node</nbn:type>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>786372915</nbn:systemId>
+                        <nbn:pairId>146</nbn:pairId>
+                        <nbn:containedBy>
+                            <nbn:cable>
+                                <nbn:systemId>473849587</nbn:systemId>
+                                <nbn:id>C0004</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Cable</nbn:type>
+                                <nbn:subtype>CTS</nbn:subtype>
+                            </nbn:cable>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>137874628</nbn:systemId>
+                        <nbn:sequenceId>467</nbn:sequenceId> 
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>36729074</nbn:systemId>
+                                <nbn:id>TM006</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>X Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection     lifecycleStatus="constructed"
+                                serviceType="POTS"> <!--(VLC11) interconnection between pillar modules-->
+                    <nbn:connectionPoint>
+                        <nbn:systemId>137874628</nbn:systemId>
+                        <nbn:sequenceId>467</nbn:sequenceId> 
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>36729074</nbn:systemId>
+                                <nbn:id>TM006</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>X Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route dataStatus="anonymous"/>
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>967832612</nbn:systemId>
+                        <nbn:sequenceId>56</nbn:sequenceId> 
+                        <nbn:status>installed</nbn:status>
+                        <nbn:containedBy>
+                            <nbn:equipment>
+                                <nbn:systemId>789023332</nbn:systemId>
+                                <nbn:id>TM007</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Termination Module</nbn:type>
+                                <nbn:subtype>M Pair</nbn:subtype>
+                                <nbn:containedBy dataStatus="dummy">
+                                    <nbn:supportingStructure>
+                                        <nbn:type>Distribution Frame</nbn:type>
+                                        <nbn:containedBy>
+                                            <nbn:equipment>
+                                                <nbn:systemId>49807652</nbn:systemId>
+                                                <nbn:id>Pi001</nbn:id>
+                                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                                <nbn:type>Pillar</nbn:type>
+                                                <nbn:subtype>CCU</nbn:subtype>
+                                            </nbn:equipment>
+                                        </nbn:containedBy>
+                                    </nbn:supportingStructure>
+                                </nbn:containedBy>
+                            </nbn:equipment>
+                        </nbn:containedBy>
+                    </nbn:connectionTerminationPoint>
+                </nbn:linkConnection>
+                <nbn:trailTerminationPoint  status="installed"
+                                    serviceType="POTS">
+                    <nbn:systemId>967832612</nbn:systemId>
+                    <nbn:sequenceId>56</nbn:sequenceId> 
+                    <nbn:status>installed</nbn:status>
+                    <nbn:containedBy>
+                        <nbn:equipment>
+                            <nbn:systemId>789023332</nbn:systemId>
+                            <nbn:id>TM007</nbn:id>
+                            <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                            <nbn:type>Termination Module</nbn:type>
+                            <nbn:subtype>M Pair</nbn:subtype>
+                            <nbn:containedBy dataStatus="dummy">
+                                <nbn:supportingStructure>
+                                    <nbn:type>Distribution Frame</nbn:type>
+                                    <nbn:containedBy>
+                                        <nbn:equipment>
+                                            <nbn:systemId>49807652</nbn:systemId>
+                                            <nbn:id>Pi001</nbn:id>
+                                            <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                            <nbn:type>Pillar</nbn:type>
+                                            <nbn:subtype>CCU</nbn:subtype>
+                                        </nbn:equipment>
+                                    </nbn:containedBy>
+                                </nbn:supportingStructure>
+                            </nbn:containedBy>
+                        </nbn:equipment>
+                    </nbn:containedBy>
+                </nbn:trailTerminationPoint>
+            </twistedPairTrail>
+            <cableTrail gml:id="trail_002" aggregationType="sequence">
+                <nbn:id>D0002</nbn:id>
+                <nbn:layer>Cables</nbn:layer>
+                <nbn:premises>
+                    <nbn:NBNLocationId>LOC000012345678</nbn:NBNLocationId>
+                </nbn:premises>
+                <nbn:trailTerminationPoint lifecycleStatus="constructed">
+                    <nbn:systemId>781274058</nbn:systemId>
+                    <nbn:id>E0001</nbn:id>
+                    <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                    <nbn:type>Premise Equipment</nbn:type>
+                    <nbn:subtype>TCO</nbn:subtype>
+                    <nbn:containedBy dataStatus="dummy"/>
+                </nbn:trailTerminationPoint>
+                <nbn:linkConnection lifecycleStatus="constructed">
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>781274058</nbn:systemId>
+                        <nbn:id>E0001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Premise Equipment</nbn:type>
+                        <nbn:subtype>TCO</nbn:subtype>
+                        <nbn:containedBy dataStatus="dummy"/>
+                    </nbn:connectionTerminationPoint>
+                    <nbn:route>
+                        <nbn:systemId>451276298</nbn:systemId>
+                        <nbn:id>C0001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Cable</nbn:type>
+                        <nbn:subtype>CLS</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>956746298</nbn:systemId>
+                                <nbn:id>D001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Duct</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>712874238</nbn:systemId>
+                        <nbn:id>J001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Joint</nbn:type>
+                        <nbn:subtype>CJL</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>890654321</nbn:systemId>
+                                <nbn:id>P001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Pit</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection lifecycleStatus="constructed">
+                    <nbn:connectionPoint>
+                        <nbn:systemId>712874238</nbn:systemId>
+                        <nbn:id>J001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Joint</nbn:type>
+                        <nbn:subtype>CJL</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>890654321</nbn:systemId>
+                                <nbn:id>P001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Pit</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>713844058</nbn:systemId>
+                        <nbn:id>C0002</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Cable</nbn:type>
+                        <nbn:subtype>CDS</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>59876523</nbn:systemId>
+                                <nbn:id>D0003</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Duct</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>49807652</nbn:systemId>
+                        <nbn:id>Pi001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Pillar</nbn:type>
+                        <nbn:subtype>CCU</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>547896123</nbn:systemId>
+                                <nbn:id>PE001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Pillar Enclosure</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection lifecycleStatus="constructed">
+                    <nbn:connectionPoint>
+                        <nbn:systemId>49807652</nbn:systemId>
+                        <nbn:id>Pi001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Pillar</nbn:type>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>547896123</nbn:systemId>
+                                <nbn:id>PE001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Pillar Enclosure</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>713844034</nbn:systemId>
+                        <nbn:id>C0003</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Cable</nbn:type>
+                        <nbn:subtype>CTS</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>364576890</nbn:systemId>
+                                <nbn:id>D002</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Duct</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>765367485</nbn:systemId>
+                        <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>FTTN Node</nbn:type>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>465213987</nbn:systemId>
+                                <nbn:id>NC001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Site</nbn:type>
+                                <nbn:subtype>FNO</nbn:subtype>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:connectionTerminationPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection lifecycleStatus="constructed">
+                    <nbn:connectionPoint>
+                        <nbn:systemId>765367485</nbn:systemId>
+                        <nbn:id>2XXX-01-01-FNO-0003</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>FTTN Node</nbn:type>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>465213987</nbn:systemId>
+                                <nbn:id>NC001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Site</nbn:type>
+                                <nbn:subtype>FNO</nbn:subtype>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>473849587</nbn:systemId>
+                        <nbn:id>C0004</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Cable</nbn:type>
+                        <nbn:subtype>CTS</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>364576890</nbn:systemId>
+                                <nbn:id>D002</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Duct</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:route>
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>49807652</nbn:systemId>
+                        <nbn:id>Pi001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Pillar</nbn:type>
+                        <nbn:subtype>CCU</nbn:subtype>
+                        <nbn:containedBy>
+                            <nbn:supportingStructure>
+                                <nbn:systemId>547896123</nbn:systemId>
+                                <nbn:id>PE001</nbn:id>
+                                <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                                <nbn:type>Pillar Enclosure</nbn:type>
+                            </nbn:supportingStructure>
+                        </nbn:containedBy>
+                    </nbn:connectionTerminationPoint>
+                </nbn:linkConnection>
+                <nbn:trailTerminationPoint lifecycleStatus="constructed">
+                    <nbn:systemId>49807652</nbn:systemId>
+                    <nbn:id>Pi001</nbn:id>
+                    <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                    <nbn:type>Pillar</nbn:type>
+                    <nbn:subtype>CCU</nbn:subtype>
+                    <nbn:containedBy>
+                        <nbn:supportingStructure>
+                            <nbn:systemId>547896123</nbn:systemId>
+                            <nbn:id>PE001</nbn:id>
+                            <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                            <nbn:type>Pillar Enclosure</nbn:type>
+                        </nbn:supportingStructure>
+                    </nbn:containedBy>
+                </nbn:trailTerminationPoint>
+            </cableTrail>
+            <supportInfrastructureTrail gml:id="trail_003" aggregationType="sequence">
+                <nbn:id>D0003</nbn:id>
+                <nbn:layer>Support Infrastructure</nbn:layer>
+                <nbn:premises>
+                    <nbn:NBNLocationId>LOC000012345678</nbn:NBNLocationId>
+                </nbn:premises>
+                <nbn:trailTerminationPoint lifecycleStatus="constructed">
+                    <nbn:systemId>781274058</nbn:systemId>
+                    <nbn:id>E0001</nbn:id>
+                    <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                    <nbn:type>Premise Equipment</nbn:type>
+                    <nbn:subtype>TCO</nbn:subtype>
+                    <nbn:site>
+                        <gml:pointProperty>
+                            <gml:Point gml:id="_001" srsName="EPSG:4283" srsDimension="2">
+                                <gml:pos>-37.28644099 145.7037892</gml:pos>
+                            </gml:Point>
+                        </gml:pointProperty>
+                    </nbn:site>
+                </nbn:trailTerminationPoint>
+                <nbn:linkConnection lifecycleStatus="constructed">
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>781274058</nbn:systemId>
+                        <nbn:id>E0001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Premise Equipment</nbn:type>
+                        <nbn:subtype>TCO</nbn:subtype>
+                        <nbn:site>
+                            <gml:pointProperty>
+                                <gml:Point gml:id="_002" srsName="EPSG:4283" srsDimension="2">
+                                    <gml:pos>-37.28644099 145.7037892</gml:pos>
+                                </gml:Point>
+                            </gml:pointProperty>
+                        </nbn:site>
+                    </nbn:connectionTerminationPoint>
+                    <nbn:route>
+                        <nbn:systemId>956746298</nbn:systemId>
+                        <nbn:id>D001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Duct</nbn:type>
+                        <gml:curveProperty>
+                            <gml:LineString gml:id="_003" srsName="EPSG:4283" srsDimension="2">
+                                <gml:posList>-27.53499574 152.5629532 -27.53507229 152.5629822 -27.53510293 152.5630287 -27.53763458 152.5625944 -27.53769602 152.5626521</gml:posList>
+                            </gml:LineString>
+                        </gml:curveProperty>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>890654321</nbn:systemId>
+                        <nbn:id>P001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Pit</nbn:type>
+                        <nbn:site>
+                            <nbn:address>15 Smith Street, Dockland, Victoria</nbn:address>
+                            <gml:pointProperty>
+                                <gml:Point gml:id="_004" srsName="EPSG:4283" srsDimension="2">
+                                    <gml:pos>-37.28644099 145.7037892</gml:pos>
+                                </gml:Point>
+                            </gml:pointProperty>
+                        </nbn:site>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection lifecycleStatus="constructed">
+                    <nbn:connectionPoint>
+                        <nbn:systemId>890654321</nbn:systemId>
+                        <nbn:id>P001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Pit</nbn:type>
+                        <nbn:site>
+                            <nbn:address>15 Smith Street, Dockland, Victoria</nbn:address>
+                            <gml:pointProperty>
+                                <gml:Point gml:id="_005" srsName="EPSG:4283" srsDimension="2">
+                                    <gml:pos>-37.28644099 145.7037892</gml:pos>
+                                </gml:Point>
+                            </gml:pointProperty>
+                        </nbn:site>
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>59876523</nbn:systemId>
+                        <nbn:id>D0003</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Duct</nbn:type>
+                        <gml:curveProperty>
+                            <gml:LineString gml:id="_006" srsName="EPSG:4283" srsDimension="2">
+                                <gml:posList>-27.53499574 152.5629532 -27.53507229 152.5629822 -27.53510293 152.5630287 -27.53763458 152.5625944 -27.53769602 152.5626521</gml:posList>
+                            </gml:LineString>
+                        </gml:curveProperty>
+                    </nbn:route>
+                    <nbn:connectionPoint>
+                        <nbn:systemId>547896123</nbn:systemId>
+                        <nbn:id>PE001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Pillar Enclosure</nbn:type>
+                        <nbn:site>
+                            <nbn:address>75 Smith Street, Dockland VIC</nbn:address>
+                            <gml:pointProperty>
+                                <gml:Point gml:id="_007" srsName="EPSG:4283" srsDimension="2">
+                                    <gml:pos>-37.28644099 145.7037892</gml:pos>
+                                </gml:Point>
+                            </gml:pointProperty>
+                        </nbn:site>
+                    </nbn:connectionPoint>
+                </nbn:linkConnection>
+                <nbn:linkConnection lifecycleStatus="constructed">
+                    <nbn:connectionPoint>
+                        <nbn:systemId>547896123</nbn:systemId>
+                        <nbn:id>PE001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Pillar Enclosure</nbn:type>
+                        <nbn:site>
+                            <nbn:address>75 Smith Street, Dockland VIC</nbn:address>
+                            <gml:pointProperty>
+                                <gml:Point gml:id="_008" srsName="EPSG:4283" srsDimension="2">
+                                    <gml:pos>-37.28644099 145.7037892</gml:pos>
+                                </gml:Point>
+                            </gml:pointProperty>
+                        </nbn:site>
+                    </nbn:connectionPoint>
+                    <nbn:route>
+                        <nbn:systemId>364576890</nbn:systemId>
+                        <nbn:id>D002</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Duct</nbn:type>
+                        <gml:curveProperty>
+                            <gml:LineString gml:id="_009" srsName="EPSG:4283" srsDimension="2">
+                                <gml:posList>-27.53499574 152.5629532 -27.53507229 152.5629822 -27.53510293 152.5630287 -27.53763458 152.5625944 -27.53769602 152.5626521</gml:posList>
+                            </gml:LineString>
+                        </gml:curveProperty>
+                    </nbn:route>
+                    <nbn:connectionTerminationPoint>
+                        <nbn:systemId>465213987</nbn:systemId>
+                        <nbn:id>NC001</nbn:id>
+                        <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                        <nbn:type>Site</nbn:type>
+                        <nbn:subtype>FNO</nbn:subtype>
+                        <nbn:site>
+                            <nbn:address>77 Smith Street, Dockland VIC</nbn:address>
+                            <gml:pointProperty>
+                                <gml:Point gml:id="_010" srsName="EPSG:4283" srsDimension="2">
+                                    <gml:pos>-37.28644099 145.7037892</gml:pos>
+                                </gml:Point>
+                            </gml:pointProperty>
+                        </nbn:site>
+                    </nbn:connectionTerminationPoint>
+                </nbn:linkConnection>
+                <nbn:trailTerminationPoint lifecycleStatus="constructed">
+                    <nbn:systemId>465213987</nbn:systemId>
+                    <nbn:id>NC001</nbn:id>
+                    <nbn:lifecycleStatus>constructed</nbn:lifecycleStatus>
+                    <nbn:type>Site</nbn:type>
+                    <nbn:subtype>FNO</nbn:subtype>
+                    <nbn:site>
+                        <nbn:address>77 Smith Street, Dockland VIC</nbn:address>
+                        <gml:pointProperty>
+                            <gml:Point gml:id="_011" srsName="EPSG:4283" srsDimension="2">
+                                <gml:pos>-37.28644099 145.7037892</gml:pos>
+                            </gml:Point>
+                        </gml:pointProperty>
+                    </nbn:site>
+                </nbn:trailTerminationPoint>
+            </supportInfrastructureTrail>
+        </do:createDesignResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
